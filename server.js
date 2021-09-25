@@ -1,10 +1,11 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import mongoose from 'mongoose'
-import asyncHandler from 'express-async-handler'
-import ContactForm from './cnform.js';
 
+const express = require('express');
+
+const cors = require('cors');
+
+const mongoose = require('mongoose')
+const asyncHandler = require('express-async-handler')
+const  ContactForm =  require ('./cnform.js')
 const app =express()
 
 app.use(cors())
